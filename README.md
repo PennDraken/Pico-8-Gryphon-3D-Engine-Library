@@ -2,7 +2,7 @@
 
 Please see http://www.lexaloffle.com/bbs/?tid=28077 for the pico-8 Gryphon 3D Engine.
 
-This is a repository for the .obj to string tool for import into your pico-8 file. Detailed instructions with pictures are stored in the .pdf file (note you can toggle export of color in Blender now). This converts to a format which supports colored faces, and can be used in Gryphon 3D engine by loading them with this loading function instead of read_face().
+This is a repository for the .obj to string tool for import into your pico-8 file. Detailed instructions with pictures are stored in the .pdf file (note you can toggle export of color in Blender now). This converts to a format which supports colored faces, and can be used in Gryphon 3D engine by loading them with this loading function instead of read_face(). The current compression algorithm is far from optimal and wastes resources by storing the color face information in 2 hexadecimal numbers. Might fix this later, but my models are quite small.
 
 ```lua
 function read_colored_face()
